@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "node16",
+		"moduleResolution": "node16",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": ["node", "jest"]// Added at final
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "disableTypeScriptVersionCheck": true,
+    "compilationMode": "partial",// Added at final
+  },
+  "exclude": ["node_modules", "tmp", "**/*.spec.ts"],//"**/*.spec.ts" Added at final
+  "ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"experimentalResolver": true
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "module": "node16",
+    "types": ["jest", "node"]
+  },
+  "files": ["setup-jest.ts"],//Added at final
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+}
